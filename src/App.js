@@ -18,7 +18,10 @@ function App() {
 
   return (
     <div className="App">
-      {colorMap}
+      <h1>REACT Rainbow</h1>
+      <div className="colorBlock">
+        {colorMap}
+      </div>
       <ColorForm addColor={addColor} />
     </div>
   );

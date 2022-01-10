@@ -8,13 +8,14 @@ function ColorForm(props) {
         e.preventDefault()
         //addColor, the function we built, should be available with props
         props.addColor(input)
+        //e.target.value = ''
     }
 
     return (
         <div>
             <form onSubmit={handleSubmit}>
-                <input type="text"
-                    onChange={(e) => setInput(e.target.value)} />
+                <input id="color" type="text"
+                    onChange={(e) => setInput(e.target.value)} required />
                 <button type="submit">Submit!</button>
             </form>
         </div>
